@@ -1,0 +1,12 @@
+{
+    "window.zoomLevel": 4,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontSize": 20,
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.insertSpaces": false,
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "expand",
+    "workbench.colorTheme": "Nord"
+}

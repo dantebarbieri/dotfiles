@@ -1,0 +1,15 @@
+[2020-07-11 11:20:34.813] [sharedprocess] [info] main {"machineId":"21b1a66efbb8c0d277f60b15955e20d262695d9684f34c1d8c6c99b62579b582","windowId":2}
+[2020-07-11 11:20:34.851] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/danteb/.config/Code/User/snippets'
+[2020-07-11 11:21:14.830] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-07-11 11:21:57.532] [sharedprocess] [info] Installing extension: arcticicestudio.nord-visual-studio-code
+[2020-07-11 11:21:57.737] [sharedprocess] [info] Downloaded extension: arcticicestudio.nord-visual-studio-code /home/danteb/.config/Code/CachedExtensionVSIXs/arcticicestudio.nord-visual-studio-code-0.14.0
+[2020-07-11 11:21:57.823] [sharedprocess] [info] Extracted extension to /home/danteb/.vscode/extensions/.arcticicestudio.nord-visual-studio-code-0.14.0: arcticicestudio.nord-visual-studio-code
+[2020-07-11 11:21:57.823] [sharedprocess] [info] Renamed to /home/danteb/.vscode/extensions/arcticicestudio.nord-visual-studio-code-0.14.0
+[2020-07-11 11:21:57.826] [sharedprocess] [info] Installation completed. arcticicestudio.nord-visual-studio-code
+[2020-07-11 11:21:57.833] [sharedprocess] [info] Extensions installed successfully: arcticicestudio.nord-visual-studio-code
+[2020-07-11 11:22:25.560] [sharedprocess] [info] Installing extension: james-yu.latex-workshop
+[2020-07-11 11:22:26.844] [sharedprocess] [info] Downloaded extension: james-yu.latex-workshop /home/danteb/.config/Code/CachedExtensionVSIXs/james-yu.latex-workshop-8.11.1
+[2020-07-11 11:22:43.700] [sharedprocess] [info] Extracted extension to /home/danteb/.vscode/extensions/.james-yu.latex-workshop-8.11.1: james-yu.latex-workshop
+[2020-07-11 11:22:43.702] [sharedprocess] [info] Renamed to /home/danteb/.vscode/extensions/james-yu.latex-workshop-8.11.1
+[2020-07-11 11:22:43.712] [sharedprocess] [info] Installation completed. james-yu.latex-workshop
+[2020-07-11 11:22:43.729] [sharedprocess] [info] Extensions installed successfully: james-yu.latex-workshop
