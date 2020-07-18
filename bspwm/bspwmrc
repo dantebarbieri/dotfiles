@@ -1,5 +1,4 @@
-#! /bin/sh
-
+#!/bin/sh
 sxhkd &
 picom &
 dropbox &
@@ -8,28 +7,28 @@ set-unsplash-wallpaper /tmp/wallpaper.jpg
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc config border_width         4
-bspc config window_gap           30
+bspc config border_width    4
+bspc config window_gap      30
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
-bspc config pointer_modifier     mod4
-bspc config pointer_action1      move
-bspc config pointer_action2      resize_side
-bspc config pointer_action3      resize_corner
+bspc config split_ratio         0.52
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config pointer_modifier    mod4
+bspc config pointer_action1     move
+bspc config pointer_action2     resize_side
+bspc config pointer_action3     resize_corner
 
-bspc config normal_border_color "#2E3440"
-bspc config active_border_color "#88C0D0"
-bspc config focused_border_color "#5E81AC"
-bspc config presel_feedback_color "#81A1C1"
-bspc config urgent_border_color "#BF616A"
+bspc config normal_border_color     "#2E3440"
+bspc config active_border_color     "#88C0D0"
+bspc config focused_border_color    "#5E81AC"
+bspc config presel_feedback_color   "#81A1C1"
+bspc config urgent_border_color     "#BF616A"
 
-bspc rule -a Gimp state=floating follow=on
-bspc rule -a firefox desktop='^2'
-bspc rule -a Chromium desktop='^2'
-bspc rule -a spotify desktop='^6'
-bspc rule -a mplayer2 state=floating
-bspc rule -a KeePass state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc rule -a Gimp         state=floating follow=on
+bspc rule -a firefox      desktop='^2'
+bspc rule -a Chromium     desktop='^2'
+# bspc rule -a spotify      desktop='^6' # This rule doesn't work. Spotify appears to run a launcher that creates the main app and ignores this property.
+bspc rule -a mplayer2     state=floating
+bspc rule -a KeePass      state=floating
+bspc rule -a Kupfer.py    focus=on
+bspc rule -a Screenkey    manage=off
