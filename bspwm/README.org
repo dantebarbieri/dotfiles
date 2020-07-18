@@ -12,13 +12,11 @@
 - [[#bspwm-rules][BSPWM Rules]]
 
 * Autostarts
-#+BEGIN_VERSE
-sxhkd -- Hotkey daemon, managed keyboard shortcuts
-picom -- Compositor, manages window drawing, transparency, etc.
-dropbox -- Cloud file management, versioning, and sync
-polybar -- Bar around screen, sourced from https://github.com/Yucklys/polybar-nord-theme with minor changes
-set-unsplash-wallpaper -- Custom script to set wallpaper using feh to random 4k image from unsplash.com with nature,landscape tags
-#+END_VERSE
+sxhkd :: Hotkey daemon, managed keyboard shortcuts
+picom :: Compositor, manages window drawing, transparency, etc.
+dropbox :: Cloud file management, versioning, and sync
+polybar :: Bar around screen, sourced from https://github.com/Yucklys/polybar-nord-theme with minor changes
+set-unsplash-wallpaper :: Custom script to set wallpaper using feh to random 4k image from unsplash.com with nature,landscape tags
 #+BEGIN_SRC sh
 sxhkd &
 picom &
