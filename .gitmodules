@@ -1,3 +1,0 @@
-[submodule "polybar"]
-	path = polybar
-	url = git@github.com:Yucklys/polybar-nord-theme.git
