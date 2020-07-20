@@ -1,2 +1,4 @@
-gaia.attached_device_id="908f0093c0bb3e1cfe6b669ed0a38b812ce01016"
+audio.crossfade_v2=true
+audio.sync_bitrate_enumeration=4
+audio.play_bitrate_enumeration=4
 ui.hide_hpto=true

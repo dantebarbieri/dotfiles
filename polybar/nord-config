@@ -7,7 +7,7 @@ monitor = ${env:MONITOR:}
 
 # bar position, apply globally
 width = 100%
-height = 3%
+height = 2.5%
 offset-x = 0
 offset-y = 0
 radius = 0.0
@@ -63,7 +63,7 @@ line-size = 6
 # if some of them doesn't suit your environment, you can change
 # it from here.
 # network interface, check by `ip link show`
-interface = wlan0
+interface = wlo2
 
 # when the current battery capacity excess this value,
 # the full-capacity format will be displayed.
@@ -91,7 +91,7 @@ warn-temperature = 70
 
 # GitHub personal token, generate from https://github.com/settings/tokens/new?scopes=notifications&description=Notifier+for+Polybar
 # where select at least `notifications` option
-github-token = 798a8f7583cef755d205f3537b33dcacd71fe858
+github-token = 5c0f7766d4c72e629ddbe2b7452ab433d53da083
 
 # notify module setting
 notify-click-left = xdotool key control+grave
