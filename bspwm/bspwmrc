@@ -3,7 +3,6 @@ sxhkd &
 picom &
 dropbox &
 ~/.config/polybar/launch.sh dark &
-set-unsplash-wallpaper /tmp/wallpaper.jpg
 
 bspc monitor DP-4 -d VI VII VIII IX X
 bspc monitor DP-0 -d I II III IV V
