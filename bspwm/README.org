@@ -29,15 +29,16 @@ set-unsplash-wallpaper /tmp/wallpaper.jpg
 Multiple monitors can each have workspaces I-X, but if
 the workspaces are exclusive then there is no name ambiguity.
 #+BEGIN_SRC sh
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor DP-4 -d VI VII VIII IX X
+bspc monitor DP-0 -d I II III IV V
 #+END_SRC
 
 * General BSPWM Config
 The bulk of the config is below, and it is split into relevant sections
 ** Gaps & Border Width
 #+BEGIN_SRC sh
-bspc config border_width    4
-bspc config window_gap      30
+bspc config border_width    2
+bspc config window_gap      10
 #+END_SRC
 ** Properties Config
 #+BEGIN_SRC sh
