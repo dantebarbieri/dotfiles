@@ -1,2 +1,0 @@
-[2020-07-11 11:18:08.836] [sharedprocess] [info] main {"machineId":"21b1a66efbb8c0d277f60b15955e20d262695d9684f34c1d8c6c99b62579b582","windowId":2}
-[2020-07-11 11:18:08.873] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/danteb/.config/Code/User/snippets'
