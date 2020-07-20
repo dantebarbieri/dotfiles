@@ -27,9 +27,11 @@ dropbox &
 Multiple monitors can each have workspaces I-X, but if
 the workspaces are exclusive then there is no name ambiguity.
 #+BEGIN_SRC sh
-bspc monitor DP-4 -d VI VII VIII IX X
-bspc monitor DP-0 -d I II III IV V
+bspc monitor DP-4 -d I II III IV V
+bspc monitor DP-0 -d VI VII VIII IX X
 #+END_SRC
+
+#+RESULTS:
 
 * General BSPWM Config
 The bulk of the config is below, and it is split into relevant sections

@@ -4,8 +4,8 @@ picom &
 dropbox &
 ~/.config/polybar/launch.sh dark &
 
-bspc monitor DP-4 -d VI VII VIII IX X
-bspc monitor DP-0 -d I II III IV V
+bspc monitor DP-4 -d I II III IV V
+bspc monitor DP-0 -d VI VII VIII IX X
 
 bspc config border_width    2
 bspc config window_gap      10
