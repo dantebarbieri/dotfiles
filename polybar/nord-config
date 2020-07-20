@@ -3,7 +3,7 @@ vim:ft=dosini
 [config]
 # DPI value for HiDPI screen
 dpi = 192
-monitor = eDP1
+monitor = ${env:MONITOR:}
 
 # bar position, apply globally
 width = 100%

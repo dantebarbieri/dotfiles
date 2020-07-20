@@ -25,11 +25,11 @@ super + n
 #+END_SRC
 
 
-** Launch Firefox
-This is technically only valid in BSPWM, hence the bspc call, and I am using [[https://fishshell.com/][fish]] syntax. It can be done similarly in any TWM so I'm leaving it here.
+** Launch Browser
+I'm using the [[https://vivaldi.com][Vivaldi]] browser for now.
 #+BEGIN_SRC text
 super + b
-    bspc desktop -f '^2'; and firefox
+    vivaldi-stable
 #+END_SRC
 
 

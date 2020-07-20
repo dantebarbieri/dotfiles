@@ -10,7 +10,7 @@ super + n
 	set-unsplash-wallpaper /tmp/wallpaper.jpg
 
 super + b
-    bspc desktop -f '^2'; and firefox
+    vivaldi-stable
 
 super + v
 	spotify
