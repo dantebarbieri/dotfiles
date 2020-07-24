@@ -22,4 +22,3 @@ function fish_prompt
 end
 
 fish_ssh_agent
-neofetch
