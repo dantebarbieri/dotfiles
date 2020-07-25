@@ -13,8 +13,8 @@ super + Return
 
 ** Program Launcher
 #+BEGIN_SRC text
-super + @space
-	dmenu_run
+super + {_,shift + }@space
+	rofi -show {drun,window}
 #+END_SRC
 
 ** Change Wallpaper

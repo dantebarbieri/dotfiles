@@ -63,12 +63,12 @@ bspc config urgent_border_color     "#BF616A"
 * BSPWM Rules
 These rules define per application how the app should be handled by BSPWM
 #+BEGIN_SRC sh
-bspc rule -a Gimp         state=floating follow=on
-bspc rule -a firefox      desktop='^2'
-bspc rule -a Chromium     desktop='^2'
-# bspc rule -a spotify      desktop='^6' # This rule doesn't work. Spotify appears to run a launcher that creates the main app and ignores this property.
-bspc rule -a mplayer2     state=floating
-bspc rule -a KeePass      state=floating
-bspc rule -a Kupfer.py    focus=on
-bspc rule -a Screenkey    manage=off
+bspc rule -a Gimp             state=floating follow=on
+bspc rule -a firefox          desktop='^2'
+bspc rule -a Chromium         desktop='^2'
+bspc rule -a Vivaldi-stable   desktop='^2'
+bspc rule -a mplayer2         state=floating
+bspc rule -a Qalculate-gtk    state=floating
+bspc rule -a Kupfer.py        focus=on
+bspc rule -a Screenkey        manage=off
 #+END_SRC

@@ -3,8 +3,8 @@ ctrl + alt + t
 super + Return
 	kitty
 
-super + @space
-	dmenu_run
+super + {_,shift + }@space
+	rofi -show {drun,window}
 
 super + n
 	set-unsplash-wallpaper /tmp/wallpaper.jpg
