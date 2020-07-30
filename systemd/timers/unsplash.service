@@ -1,0 +1,9 @@
+[Unit]
+Description=background from unsplash
+
+[Service]
+Type=oneshot
+User=danteb
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/danteb/.Xauthority
+ExecStart=set-unsplash-wallpaper /tmp/wallpaper.jpg

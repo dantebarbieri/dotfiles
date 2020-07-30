@@ -1,0 +1,9 @@
+[Unit]
+Description=Fetch a random 4k UHD wallpaper from unsplash every 5 minutes
+
+[Timer]
+OnStartupSec=30sec
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target
