@@ -17,8 +17,4 @@ alias cache "sudo pacman -Sc --color always"
 alias cache "yay -Sc"
 alias .. "cd .."
 
-function fish_prompt
-    powerline-shell --shell bare $status
-end
-
 fish_ssh_agent
