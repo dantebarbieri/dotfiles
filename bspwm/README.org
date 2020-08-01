@@ -5,6 +5,8 @@
 * Table of Contents :toc:
 - [[#autostarts][Autostarts]]
 - [[#monitor-config][Monitor Config]]
+  - [[#laptop-monitor][Laptop Monitor]]
+  - [[#desktop-monitors][Desktop Monitors]]
 - [[#general-bspwm-config][General BSPWM Config]]
   - [[#gaps--border-width][Gaps & Border Width]]
   - [[#properties-config][Properties Config]]
@@ -26,8 +28,12 @@ dropbox &
 * Monitor Config
 Multiple monitors can each have workspaces I-X, but if
 the workspaces are exclusive then there is no name ambiguity.
+** Laptop Monitor
 #+BEGIN_SRC sh
-bspc monitor eDP1 -d I II III IV V V! VII VIII IX X
+bspc monitor eDP1 -d I II III IV V VI VII VIII IX X
+#+END_SRC
+** Desktop Monitors
+#+BEGIN_SRC sh
 bspc monitor DP-4 -d I II III IV V
 bspc monitor DP-0 -d VI VII VIII IX X
 #+END_SRC
