@@ -121,6 +121,7 @@
 
 * Theme
 ** Nord
+I utilize [[https://orgmode.org/manual/Noweb-Reference-Syntax.html][Noweb Reference Syntax]] for this org-mode document to make the colors human readable. They are sourced from [[https://www.nordtheme.com/docs/colors-and-palettes][nordtheme.com]].
 #+BEGIN_SRC kitty :noweb tangle :tangle kitty.conf
 background  <<nord1>>
 foreground  <<nord5>>
