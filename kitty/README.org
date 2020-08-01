@@ -1,0 +1,124 @@
+#+TITLE: Test
+
+#+NAME: nord0
+#+BEGIN_SRC text
+#2E3440
+#+END_SRC
+
+#+NAME: nord1
+#+BEGIN_SRC text
+#3B4252
+#+END_SRC
+
+#+NAME: nord2
+#+BEGIN_SRC text
+#434C5E
+#+END_SRC
+
+#+NAME: nord3
+#+BEGIN_SRC text
+#4C566A
+#+END_SRC
+
+#+NAME: nord4
+#+BEGIN_SRC text
+#D8DEE9
+#+END_SRC
+
+#+NAME: nord5
+#+BEGIN_SRC text
+#E5E9F0
+#+END_SRC
+
+#+NAME: nord6
+#+BEGIN_SRC text
+#ECEFF4
+#+END_SRC
+
+#+NAME: nord7
+#+BEGIN_SRC text
+#8FBCBB
+#+END_SRC
+
+#+NAME: nord8
+#+BEGIN_SRC text
+#88C0D0
+#+END_SRC
+
+#+NAME: nord9
+#+BEGIN_SRC text
+#81A1C1
+#+END_SRC
+
+#+NAME: nord10
+#+BEGIN_SRC text
+#5E81AC
+#+END_SRC
+
+#+NAME: nord11
+#+BEGIN_SRC text
+#BF616A
+#+END_SRC
+
+#+NAME: nord12
+#+BEGIN_SRC text
+#D08770
+#+END_SRC
+
+#+NAME: nord13
+#+BEGIN_SRC text
+#EBCB8B
+#+END_SRC
+
+#+NAME: nord14
+#+BEGIN_SRC text
+#A3BE8C
+#+END_SRC
+
+#+NAME: nord15
+#+BEGIN_SRC text
+#B48EAD
+#+END_SRC
+
+* Table of Contents :toc:
+- [[#theme][Theme]]
+  - [[#nord][Nord]]
+- [[#font][Font]]
+
+* Theme
+** Nord
+#+BEGIN_SRC kitty :noweb tangle :tangle kitty.conf
+background  <<nord1>>
+foreground  <<nord5>>
+cursor      <<nord4>>
+color0      <<nord2>>
+color8      <<nord3>>
+color1      <<nord11>>
+color9      <<nord11>>
+color2      <<nord14>>
+color10     <<nord14>>
+color3      <<nord13>>
+color11     <<nord13>>
+color4      <<nord9>>
+color12     <<nord9>>
+color5      <<nord15>>
+color13     <<nord15>>
+color6      <<nord8>>
+color14     <<nord7>>
+color7      <<nord5>>
+color15     <<nord6>>
+selection_foreground  <<nord10>>
+selection_background  <<nord6>>
+
+background_opacity  0.95
+#+END_SRC
+
+* Font
+#+BEGIN_SRC kitty tangle :tangle kitty.conf
+font_family Fira Code
+bold_font auto
+italic_font auto
+bold_italic_font auto
+font_size 20.0
+disable_ligatures never
+#+END_SRC
