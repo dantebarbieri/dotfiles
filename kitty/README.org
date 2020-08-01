@@ -23,97 +23,97 @@
 - [[#font][Font]]
 
 * Nord Color Scheme
-** nord0
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord0][nord0]]
 #+NAME: nord0
 #+BEGIN_SRC text
 #2E3440
 #+END_SRC
 
-** nord1
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord1][nord1]]
 #+NAME: nord1
 #+BEGIN_SRC text
 #3B4252
 #+END_SRC
 
-** nord2
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord2][nord2]]
 #+NAME: nord2
 #+BEGIN_SRC text
 #434C5E
 #+END_SRC
 
-** nord3
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord3][nord3]]
 #+NAME: nord3
 #+BEGIN_SRC text
 #4C566A
 #+END_SRC
 
-** nord4
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord4][nord4]]
 #+NAME: nord4
 #+BEGIN_SRC text
 #D8DEE9
 #+END_SRC
 
-** nord5
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord5][nord5]]
 #+NAME: nord5
 #+BEGIN_SRC text
 #E5E9F0
 #+END_SRC
 
-** nord6
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord6][nord6]]
 #+NAME: nord6
 #+BEGIN_SRC text
 #ECEFF4
 #+END_SRC
 
-** nord7
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord7][nord7]]
 #+NAME: nord7
 #+BEGIN_SRC text
 #8FBCBB
 #+END_SRC
 
-** nord8
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord8][nord8]]
 #+NAME: nord8
 #+BEGIN_SRC text
 #88C0D0
 #+END_SRC
 
-** nord9
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord9][nord9]]
 #+NAME: nord9
 #+BEGIN_SRC text
 #81A1C1
 #+END_SRC
 
-** nord10
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord10][nord10]]
 #+NAME: nord10
 #+BEGIN_SRC text
 #5E81AC
 #+END_SRC
 
-** nord11
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord11][nord11]]
 #+NAME: nord11
 #+BEGIN_SRC text
 #BF616A
 #+END_SRC
 
-** nord12
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord12][nord12]]
 #+NAME: nord12
 #+BEGIN_SRC text
 #D08770
 #+END_SRC
 
-** nord13
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord13][nord13]]
 #+NAME: nord13
 #+BEGIN_SRC text
 #EBCB8B
 #+END_SRC
 
-** nord14
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord14][nord14]]
 #+NAME: nord14
 #+BEGIN_SRC text
 #A3BE8C
 #+END_SRC
 
-** nord15
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord15][nord15]]
 #+NAME: nord15
 #+BEGIN_SRC text
 #B48EAD
