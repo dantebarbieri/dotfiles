@@ -1,0 +1,13 @@
+#+TITLE: Fish Config
+#+PROPERTY: header-args :tangle config.fish
+
+* Table of Contents :toc:
+- [[#autostarts][Autostarts]]
+  - [[#fish-ssh-agent][Fish SSH Agent]]
+
+* Autostarts
+** Fish SSH Agent
+[[https://github.com/ivakyb/fish_ssh_agent][Fish SSH Agent]] enables the SSH agent so that it can work in the Fish shell.
+#+BEGIN_SRC fish
+fish_ssh_agent
+#+END_SRC
