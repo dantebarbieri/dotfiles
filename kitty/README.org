@@ -123,9 +123,9 @@
 ** Nord
 I utilize [[https://orgmode.org/manual/Noweb-Reference-Syntax.html][Noweb Reference Syntax]] for this org-mode document to make the colors human readable. They are sourced from [[https://www.nordtheme.com/docs/colors-and-palettes][nordtheme.com]].
 #+BEGIN_SRC kitty :noweb tangle :tangle kitty.conf
-background  <<nord1>>
+background  <<nord0>>
 foreground  <<nord5>>
-cursor      <<nord4>>
+cursor      <<nord9>>
 color0      <<nord2>>
 color8      <<nord3>>
 color1      <<nord11>>
@@ -142,8 +142,8 @@ color6      <<nord8>>
 color14     <<nord7>>
 color7      <<nord5>>
 color15     <<nord6>>
-selection_foreground  <<nord10>>
-selection_background  <<nord6>>
+selection_foreground  <<nord8>>
+selection_background  <<nord3>>
 
 background_opacity  0.95
 #+END_SRC
