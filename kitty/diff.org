@@ -51,39 +51,39 @@ pygments_style nord
 
 Basic colors
 #+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
-foreground black
-background white
+foreground <<nord6>>
+background <<nord0>>
 #+END_SRC
 
 Title colors
 #+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
-title_fg black
-title_bg white
+title_fg <<nord4>>
+title_bg <<nord0>>
 #+END_SRC
 
 Margin colors
 #+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
-margin_bg #fafbfc
-margin_fg #aaaaaa
+margin_bg <<nord1>>
+margin_fg <<nord3>>
 #+END_SRC
 
 Removed text backgrounds
 #+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
-removed_bg           #ffeef0
-highlight_removed_bg #fdb8c0
-removed_margin_bg    #ffdce0
+removed_bg           #592d31
+highlight_removed_bg <<nord11>>
+removed_margin_bg    #cc6872
 #+END_SRC
 
 Added text backgrounds
 #+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
-added_bg           #e6ffed
-highlight_added_bg #acf2bd
-added_margin_bg    #cdffd8
+added_bg           #4c5942
+highlight_added_bg <<nord14>>
+added_margin_bg    #afcc96
 #+END_SRC
 
 Filler (empty) line background
 #+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
-filler_bg #fafbfc
+filler_bg <<nord1>>
 #+END_SRC
 
 Filler (empty) line background in margins, defaults to the filler background
@@ -93,8 +93,8 @@ margin_filler_bg none
 
 Hunk header colors
 #+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
-hunk_margin_bg #dbedff
-hunk_bg        #f1f8ff
+hunk_margin_bg <<nord10>>
+hunk_bg        <<nord9>>
 #+END_SRC
 
 Highlighting
