@@ -63,7 +63,7 @@ line-size = 6
 # if some of them doesn't suit your environment, you can change
 # it from here.
 # network interface, check by `ip link show`
-interface = wlo2
+interface = wlp2s0
 
 # when the current battery capacity excess this value,
 # the full-capacity format will be displayed.

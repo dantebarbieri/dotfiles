@@ -5,7 +5,7 @@ type = custom/menu
 expand-right = true
 
 label-open = 
-label-close =  |
+label-close =  |
 
 menu-0-0 = 
 menu-0-0-foreground = ${colors.urgent}
