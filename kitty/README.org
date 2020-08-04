@@ -8,14 +8,11 @@
 
 * Includes
 ** Diff Styling
-Diff styling comes from [[./diff.org][diff.org]].
-#+BEGIN_SRC kitty tangle :tangle kitty.conf
-import diff.conf
-#+END_SRC
+Diff styling comes from [[./diff.org][diff.org]]. This is automatic and does not rely on an include.
 ** Theme
 Diff styling comes from [[./theme.org][theme.org]].
 #+BEGIN_SRC kitty tangle :tangle kitty.conf
-import theme.conf
+include theme.conf
 #+END_SRC
 
 * Font
