@@ -2,6 +2,7 @@
 
 * Table of Contents :toc:
 - [[#includes][Includes]]
+  - [[#diff-styling][Diff Styling]]
 - [[#theme][Theme]]
   - [[#nord][Nord]]
 - [[#font][Font]]
@@ -24,6 +25,8 @@
   - [[#nord15][nord15]]
 
 * Includes
+** Diff Styling
+Diff styling comes from [[./diff.org][diff.org]].
 #+BEGIN_SRC kitty :noweb tangle :tangle kitty.conf
 import diff.conf
 #+END_SRC
