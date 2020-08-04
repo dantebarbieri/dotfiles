@@ -1,0 +1,232 @@
+#+TITLE: Diff Config
+
+* Table of Contents :toc:
+- [[#diffing][Diffing]]
+- [[#colors][Colors]]
+- [[#keyboard-shortcuts][Keyboard shortcuts]]
+- [[#nord-color-scheme][Nord Color Scheme]]
+  - [[#nord0][nord0]]
+  - [[#nord1][nord1]]
+  - [[#nord2][nord2]]
+  - [[#nord3][nord3]]
+  - [[#nord4][nord4]]
+  - [[#nord5][nord5]]
+  - [[#nord6][nord6]]
+  - [[#nord7][nord7]]
+  - [[#nord8][nord8]]
+  - [[#nord9][nord9]]
+  - [[#nord10][nord10]]
+  - [[#nord11][nord11]]
+  - [[#nord12][nord12]]
+  - [[#nord13][nord13]]
+  - [[#nord14][nord14]]
+  - [[#nord15][nord15]]
+
+* Diffing
+File extension aliases for syntax highlight For example, to syntax highlight file.xyz as file.abc use a setting of xyz:abc
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+syntax_aliases pyj:py pyi:py recipe:py
+#+END_SRC
+
+The number of lines of context to show around each change.
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+num_context_lines 3
+#+END_SRC
+
+The diff command to use. Must contain the placeholder _CONTEXT_ which will be replaced by the number of lines of context. The default is to search the system for either git or diff and use that, if found.
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+diff_cmd auto
+#+END_SRC
+
+The string to replace tabs with. Default is to use four spaces.
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+replace_tab_by \x20\x20\x20\x20
+#+END_SRC
+
+* Colors
+The pygments color scheme to use for syntax highlighting. See [[https://help.farbox.com/pygments.html][pygments colors schemes]] for a list of schemes.
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+pygments_style nord
+#+END_SRC
+
+Basic colors
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+foreground black
+background white
+#+END_SRC
+
+Title colors
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+title_fg black
+title_bg white
+#+END_SRC
+
+Margin colors
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+margin_bg #fafbfc
+margin_fg #aaaaaa
+#+END_SRC
+
+Removed text backgrounds
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+removed_bg           #ffeef0
+highlight_removed_bg #fdb8c0
+removed_margin_bg    #ffdce0
+#+END_SRC
+
+Added text backgrounds
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+added_bg           #e6ffed
+highlight_added_bg #acf2bd
+added_margin_bg    #cdffd8
+#+END_SRC
+
+Filler (empty) line background
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+filler_bg #fafbfc
+#+END_SRC
+
+Filler (empty) line background in margins, defaults to the filler background
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+margin_filler_bg none
+#+END_SRC
+
+Hunk header colors
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+hunk_margin_bg #dbedff
+hunk_bg        #f1f8ff
+#+END_SRC
+
+Highlighting
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+search_bg #444
+search_fg white
+select_bg #b4d5fe
+select_fg black
+#+END_SRC
+
+* Keyboard shortcuts
+#+BEGIN_SRC kitty :noweb tangle :tangle diff.conf
+map q         quit
+map esc       quit
+map j         scroll_by 1
+map down      scroll_by 1
+map k         scroll_by -1
+map up        scroll_by -1
+map home      scroll_to start
+map end       scroll_to end
+map page_down scroll_to next-page
+map space     scroll_to next-page
+map page_up   scroll_to prev-page
+map n         scroll_to next-change
+map p         scroll_to prev-change
+map a         change_context all
+map =         change_context default
+map +         change_context 5
+map -         change_context -5
+map /         start_search regex forward
+map ?         start_search regex backward
+map .         scroll_to next-match
+map >         scroll_to next-match
+map ,         scroll_to prev-match
+map <         scroll_to prev-match
+map f         start_search substring forward
+map b         start_search substring backward
+#+END_SRC
+
+* Nord Color Scheme
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord0][nord0]]
+#+NAME: nord0
+#+BEGIN_SRC text
+#2E3440
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord1][nord1]]
+#+NAME: nord1
+#+BEGIN_SRC text
+#3B4252
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord2][nord2]]
+#+NAME: nord2
+#+BEGIN_SRC text
+#434C5E
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord3][nord3]]
+#+NAME: nord3
+#+BEGIN_SRC text
+#4C566A
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord4][nord4]]
+#+NAME: nord4
+#+BEGIN_SRC text
+#D8DEE9
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord5][nord5]]
+#+NAME: nord5
+#+BEGIN_SRC text
+#E5E9F0
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord6][nord6]]
+#+NAME: nord6
+#+BEGIN_SRC text
+#ECEFF4
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord7][nord7]]
+#+NAME: nord7
+#+BEGIN_SRC text
+#8FBCBB
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord8][nord8]]
+#+NAME: nord8
+#+BEGIN_SRC text
+#88C0D0
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord9][nord9]]
+#+NAME: nord9
+#+BEGIN_SRC text
+#81A1C1
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord10][nord10]]
+#+NAME: nord10
+#+BEGIN_SRC text
+#5E81AC
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord11][nord11]]
+#+NAME: nord11
+#+BEGIN_SRC text
+#BF616A
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord12][nord12]]
+#+NAME: nord12
+#+BEGIN_SRC text
+#D08770
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord13][nord13]]
+#+NAME: nord13
+#+BEGIN_SRC text
+#EBCB8B
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord14][nord14]]
+#+NAME: nord14
+#+BEGIN_SRC text
+#A3BE8C
+#+END_SRC
+
+** [[https://www.nordtheme.com/docs/colors-and-palettes#nord15][nord15]]
+#+NAME: nord15
+#+BEGIN_SRC text
+#B48EAD
+#+END_SRC
