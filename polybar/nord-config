@@ -45,12 +45,12 @@ wm-restack = bspwm
 # Top modules
 top-left = bspwm title
 top-center = mpd
-top-right = keyboard alsa network-short battery date
+top-right = keyboard backlight alsa network-short battery date
 
 # Bottom modules
 bottom-left = powermenu info-hackspeed weather
-bottom-center = none
-bottom-right = temperature
+bottom-center = github
+bottom-right = memory cpu temperature
 
 systray-top = none
 systray-bottom = right
@@ -91,7 +91,7 @@ warn-temperature = 70
 
 # GitHub personal token, generate from https://github.com/settings/tokens/new?scopes=notifications&description=Notifier+for+Polybar
 # where select at least `notifications` option
-github-token = 5c0f7766d4c72e629ddbe2b7452ab433d53da083
+github-token = 9837198b9ea72f38d17991c93e2f21247293534e
 
 # notify module setting
 notify-click-left = xdotool key control+grave
