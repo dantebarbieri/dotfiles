@@ -23,7 +23,7 @@
 		"exp": 1597426798
 	},
 	"tokens": {
-		"expires_at": 1597426812393,
+		"expires_at": 1597449111732,
 		"refresh_token": "1//0fK_k_BxPlDcqCgYIARAAGA8SNwF-L9IrW3dN0peNKN9k5NORA7RR4SxRxyAu7l9l0Fkj2kgYjlt7JX94sJDvE1g1vAqfbz0ZoDo",
 		"scopes": [
 			"email",
@@ -32,11 +32,11 @@
 			"https://www.googleapis.com/auth/firebase",
 			"openid"
 		],
-		"access_token": "ya29.a0AfH6SMDQaPWjnFsWguWnYNbj9vmpUp3EZ5DRLQMxtSkTtKR6ZgcT7gdN-oWWAYLIAZFpZ856mSiOdbP3VSXZAfptJTh14XorWe1z9LYVSJDcmFZ9aEnEwp2_H9EaKvYbMPoBxWjguV-rZ0i19WmEd1tOhFUfDPfA7jMF-XLAOcE",
+		"access_token": "ya29.a0AfH6SMBZeuB5JNAk0ZS0W-MPAcmv6T71vR-j-ygqPygQ31f2m-EjiCDV_iTY-Ex5iBXdp_gM1w9lmQE1MNYGWarFhAk4p9uLgQiRAtfL372nyOXU9zpphr_yYaNmTaK954yskt-UTLnpLgCR7gHsCqNo-Y1eAYsk8xnauYvk1PdD",
 		"expires_in": 3599,
-		"scope": "openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform",
+		"scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform openid",
 		"token_type": "Bearer",
-		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0NGY2MGU5ZmI1MTVhMmEwMWMxMWViZWIyMjg3MTI4NjA1NDA3MTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE0MTkzMzM0Mjg1NzQyNzE0MzM0IiwiZW1haWwiOiJkYW50ZXZiYXJiaWVyaUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkRvbG82aXlfSmFrN1lvMGNnb28zMWciLCJpYXQiOjE1OTc0MjMyMTUsImV4cCI6MTU5NzQyNjgxNX0.VyjM5J5v7rxPAyp24c8Koipg3gJnMlzict0mz2aq5H6tVnrZ0Ydn_GR1oDQjr10knjMImNNS4yDrW9hQjxQHFFQ1TBAfjWfnk0U7-jMkVXCBskVxJmjlwk34P8xpJfjeArhKaZgvsTNm-g4vhKkECKtx196Qm0fMsjQaVCaOwlIOHlJuwhfYybRxwZOw8IwODaJdPRi569Hsuh3NGfZWMl-rZ_KP1hEZXFOWFFnK-qipXM5JPjiSW-fWcOZOSqIgwYGJ5UcydECYvGKqNtdoBLuOjGUE8nXZJNf5a8tCMyf7ibvAn_oPbBP2dcO7ub2mdi-0AWkI2D8SFjZuIcP4eA"
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0NGY2MGU5ZmI1MTVhMmEwMWMxMWViZWIyMjg3MTI4NjA1NDA3MTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE0MTkzMzM0Mjg1NzQyNzE0MzM0IiwiZW1haWwiOiJkYW50ZXZiYXJiaWVyaUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IjRhRlRlTXVpR2FCRkV6bmNkU3d1RGciLCJpYXQiOjE1OTc0NDU1MTUsImV4cCI6MTU5NzQ0OTExNX0.KsPFKkcBGQTsoukJ1BdcrO5hnerMOgjiOJ0QtJXlzyjpU7vOMkIrPdTnA_oDSxOgWs1Lz40of95u5qKGcTG1IcWTZ_J5uMEUk7CGO84_vObV2rCGTSwU2ITwF8Uh3m5b6vuGELufIFYxpg7Dn3GypC-MVpPRlnJMdSI5uXSh3uIsd3KEd8vNCr45uaV4kxakN1mnt4tkIJ2bFP8c_vuInpSUYN0QlnLuReR_CC5rJ9ARuHs3Sh2BW9KfMiVlQGndITEF1jfITcm6gQrbUbmWeXForMJVWhCtWcoVWMIN335for71trEP2TEvQF8xaBaJGhiZIoDNwRa5zVzz7RDYVA"
 	},
 	"activeProjects": {
 		"/home/danteb/Documents/csce-pt-database-tamu": "csce-pt-database-tamu"
