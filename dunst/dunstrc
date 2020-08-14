@@ -30,7 +30,7 @@ sort = yes
 
 idle_threshold = 120
 
-font = Roboto 16
+font = Roboto 12
 
 line_height = 0
 
