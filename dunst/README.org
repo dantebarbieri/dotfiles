@@ -1,5 +1,4 @@
 #+TITLE: Dunst Config
-#+PROPERTY: header-args :tangle dunstrc
 
 * Table of Contents :toc:
 - [[#global][Global]]
@@ -19,15 +18,16 @@
 - [[#urgency-critical][Urgency Critical]]
 - [[#miscellaneous][Miscellaneous]]
   - [[#shell-like-globbing-will-get-expanded][Shell-like globbing will get expanded.]]
+- [[#nord-color-scheme][Nord Color Scheme]]
 
 * Global
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 [global]
 #+END_SRC
 
 ** Display
 *** Which monitor should the notifications be displayed on.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 monitor = 0
 #+END_SRC
 
@@ -39,67 +39,66 @@ monitor = 0
 "~keyboard~" needs a window manager that exports the ~_NET_ACTIVE_WINDOW~ property. This should be the case for almost all modern window managers.
 
 If this option is set to mouse or keyboard, the monitor option will be ignored.
-#+BEGIN_SRC dunstrc
-follow = mouse
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+follow = none
 #+END_SRC
 
 *** The geometry of the window:
-  =[{width}]x{height}[+/-{x}+/-{y}]=
-The geometry of the message window.
+=[{width}]x{height}[+/-{x}+/-{y}]=\\The geometry of the message window.
 
 The height is measured in number of notifications everything else in pixels.  If the width is omitted but the height is given ("~-geometry x2~"), the message window expands over the whole screen (dmenu-like).  If ~width~ is ~0~, the window expands to the longest message displayed.  A positive ~x~ is measured from the left, a negative from the right side of the screen.  ~Y~ is measured from the top and down respectively.
 
 The width can be negative.  In this case the actual width is the screen width minus the width defined in within the geometry option.
-#+BEGIN_SRC dunstrc
-geometry = "300x5-30+20"
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+geometry = "300x5-30-40"
 #+END_SRC
 
 *** Show how many messages are currently hidden (because of geometry).
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 indicate_hidden = yes
 #+END_SRC
 
 *** Shrink window if it's smaller than the width.  Will be ignored if width is 0.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 shrink = no
 #+END_SRC
 
 *** The transparency of the window.  Range: ~[0; 100]~.
 This option will only work if a compositing window manager is present (e.g. xcompmgr, compiz, etc.).
-#+BEGIN_SRC dunstrc
-transparency = 0
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+transparency = 10
 #+END_SRC
 
 *** The height of the entire notification.  If the height is smaller than the font height and padding combined, it will be raised to the font height and padding.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 notification_height = 0
 #+END_SRC
 
 *** Draw a line of "separator_height" pixel height between two notifications.
 Set to 0 to disable.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 separator_height = 2
 #+END_SRC
 
 *** Padding between text and separator.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 padding = 8
 #+END_SRC
 
 *** Horizontal padding.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 horizontal_padding = 8
 #+END_SRC
 
 *** Defines width in pixels of frame around the notification window.
 Set to 0 to disable.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 frame_width = 3
 #+END_SRC
 
 *** Defines color of the frame around the notification window.
-#+BEGIN_SRC dunstrc
-frame_color = "#aaaaaa"
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+frame_color = "<<nord10>>"
 #+END_SRC
 
 *** Define a color for the separator.
@@ -108,12 +107,12 @@ possible values are:
 - foreground :: use the same color as the foreground;
 - frame :: use the same color as the frame;
 - anything else will be interpreted as a ~X~ color.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 separator_color = frame
 #+END_SRC
 
 *** Sort messages by urgency.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 sort = yes
 #+END_SRC
 
@@ -121,18 +120,18 @@ sort = yes
 Set to 0 to disable.
 
 A client can set the 'transient' hint to bypass this. See the rules section for how to disable this if necessary
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 idle_threshold = 120
 #+END_SRC
 
 ** Text
 
-#+BEGIN_SRC dunstrc
-font = Monospace 8
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+font = Roboto 16
 #+END_SRC
 
 *** The spacing between lines.  If the height is smaller than the font height, it will get raised to the font height.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 line_height = 0
 #+END_SRC
 
@@ -150,7 +149,7 @@ For a complete reference see https://developer.gnome.org/pango/stable/pango-Mark
 - no :: Disable markup parsing, incoming notifications will be treated as plain text. Dunst will not advertise that it has the body-markup capability if this is set as a global setting.
 
 It's important to note that markup inside the format option will be parsed regardless of what this is set to.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 markup = full
 #+END_SRC
 
@@ -166,120 +165,120 @@ markup = full
 | ~%n~   | progress value if set without any extra characters  |
 | ~%%~   | Literal %                                           |
 Markup is allowed
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 format = "<b>%s</b>\n%b"
 #+END_SRC
 
 *** Alignment of message text.
 Possible values are "~left~", "~center~" and "~right~".
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 alignment = left
 #+END_SRC
 
 *** Vertical alignment of message text and icon.
 Possible values are "~top~", "~center~" and "~bottom~".
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 vertical_alignment = center
 #+END_SRC
 
 *** Show age of message if message is older than ~show_age_threshold~ seconds.
 Set to -1 to disable.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 show_age_threshold = 60
 #+END_SRC
 
 *** Split notifications into multiple lines if they don't fit into geometry.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 word_wrap = yes
 #+END_SRC
 
 *** When word_wrap is set to no, specify where to make an ellipsis in long lines.
 Possible values are "~start~", "~middle~" and "~end~".
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 ellipsize = middle
 #+END_SRC
 
 *** Ignore newlines '\n' in notifications.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 ignore_newline = no
 #+END_SRC
 
 *** Stack together notifications with the same content
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 stack_duplicates = true
 #+END_SRC
 
 *** Hide the count of stacked notifications with the same content
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 hide_duplicate_count = false
 #+END_SRC
 
 *** Display indicators for URLs (U) and actions (A).
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 show_indicators = yes
 #+END_SRC
 
 ** Icons
 *** Align icons ~left~ / ~right~ / ~off~
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 icon_position = left
 #+END_SRC
 
 *** Scale small icons up to this size, set to 0 to disable. Helpful for e.g. small files or high-dpi screens. In case of conflict, ~max_icon_size~ takes precedence over this.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 min_icon_size = 0
 #+END_SRC
 
 *** Scale larger icons down to this size, set to 0 to disable
-#+BEGIN_SRC dunstrc
-max_icon_size = 32
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+max_icon_size = 64
 #+END_SRC
 
 *** Paths to default icons.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 #+END_SRC
 
 ** History
 *** Should a notification popped up from history be sticky or timeout as if it would normally do.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 sticky_history = yes
 #+END_SRC
 
 *** Maximum amount of notifications kept in history
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 history_length = 20
 #+END_SRC
 
 ** Misc/Advanced
 *** dmenu path.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 dmenu = /usr/bin/dmenu -p dunst:
 #+END_SRC
 
 *** Browser for opening urls in context menu.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 browser = /usr/bin/firefox -new-tab
 #+END_SRC
 
 *** Always run rule-defined scripts, even if the notification is suppressed
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 always_run_script = true
 #+END_SRC
 
 *** Define the title of the windows spawned by dunst
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 title = Dunst
 #+END_SRC
 
 *** Define the class of the windows spawned by dunst
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 class = Dunst
 #+END_SRC
 
 *** Print a notification on startup.
 This is mainly for error detection, since dbus (re-)starts dunst automatically after a crash.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 startup_notification = false
 #+END_SRC
 
@@ -290,19 +289,19 @@ Can be one of the following values:
 - mesg :: Important Messages
 - info :: all unimportant stuff
 - debug :: all less than unimportant stuff
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 verbosity = mesg
 #+END_SRC
 
 *** Define the corner radius of the notification window in pixel size. If the radius is 0, you have no rounded corners.
 The radius will be automatically lowered if it exceeds half of the notification height to avoid clipping text and/or icons.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 corner_radius = 12
 #+END_SRC
 
 *** Ignore the dbus closeNotification message.
 Useful to enforce the timeout set by dunst configuration. Without this parameter, an application may close the notification sent before the user defined timeout.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 ignore_dbusclose = false
 #+END_SRC
 
@@ -315,7 +314,7 @@ discouraged.
 By enabling this setting dunst will not be able to detect when a monitor
 is connected or disconnected which might break follow mode if the screen
 layout changes.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 force_xinerama = false
 #+END_SRC
 
@@ -327,7 +326,7 @@ Possible values are:
 - close_current :: Close current notification.
 - close_all :: Close all notifications.
 These values can be strung together for each mouse event, and will be executed in sequence.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 mouse_left_click = close_current
 mouse_middle_click = do_action, close_current
 mouse_right_click = close_all
@@ -336,18 +335,18 @@ mouse_right_click = close_all
 * Experimental
 Experimental features that may or may not work correctly. Do not expect them
 to have a consistent behaviour across releases.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 [experimental]
 #+END_SRC
 
 ** Calculate the dpi to use on a per-monitor basis.
 If this setting is enabled the Xft.dpi value will be ignored and instead dunst will attempt to calculate an appropriate dpi value for each monitor using the resolution and physical size. This might be useful in setups where there are multiple screens with very different dpi values.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 per_monitor_dpi = false
 #+END_SRC
 
 * Shortcuts
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 [shortcuts]
 #+END_SRC
 
@@ -356,63 +355,63 @@ Shortcuts are specified as [modifier+][modifier+]...key Available modifiers are 
 Xev might be helpful to find names for keys.
 
 *** Close notification.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 close = ctrl+space
 #+END_SRC
 
 *** Close all notifications.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 close_all = ctrl+shift+space
 #+END_SRC
 
 *** Redisplay last message(s).
 On the US keyboard layout "grave" is normally above TAB and left of "1". Make sure this key actually exists on your keyboard layout, e.g. check output of 'xmodmap -pke'
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 history = ctrl+grave
 #+END_SRC
 
 *** Context menu.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 context = ctrl+shift+period
 #+END_SRC
 
 * Urgency Low
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 [urgency_low]
 #+END_SRC
 
 ** IMPORTANT: colors have to be defined in quotation marks.
 Otherwise the "#" and following would be interpreted as a comment.
-#+BEGIN_SRC dunstrc
-background = "#222222"
-foreground = "#888888"
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+background = "<<nord3>>"
+foreground = "<<nord4>>"
 timeout = 10
 # Icon for notifications with low urgency, uncomment to enable
 #icon = /path/to/icon
 #+END_SRC
 
 * Urgency Normal
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 [urgency_normal]
 #+END_SRC
 
-#+BEGIN_SRC dunstrc
-background = "#285577"
-foreground = "#ffffff"
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+background = "<<nord0>>"
+foreground = "<<nord6>>"
 timeout = 10
 # Icon for notifications with normal urgency, uncomment to enable
 #icon = /path/to/icon
 #+END_SRC
 
 * Urgency Critical
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 [urgency_critical]
 #+END_SRC
 
-#+BEGIN_SRC dunstrc
-background = "#900000"
-foreground = "#ffffff"
-frame_color = "#ff0000"
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
+background = "<<nord6>>"
+foreground = "<<nord11>>"
+frame_color = "<<nord11>>"
 timeout = 0
 # Icon for notifications with critical urgency, uncomment to enable
 #icon = /path/to/icon
@@ -460,14 +459,14 @@ NOTE: if you don't want a notification to be displayed, set the format to "".
 NOTE: It might be helpful to run dunst -print in a terminal in order to find fitting options for rules.
 
 *** Disable the transient hint so that idle_threshold cannot be bypassed from the client
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 #[transient_disable]
 #    match_transient = yes
 #    set_transient = no
 #+END_SRC
 
 *** Make the handling of transient notifications more strict by making them not be placed in history.
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 #[transient_history_ignore]
 #    match_transient = yes
 #    history_ignore = yes
@@ -477,7 +476,7 @@ NOTE: It might be helpful to run dunst -print in a terminal in order to find fit
 - show :: show the notifications, regardless if there is a fullscreen window opened
 - delay :: displays the new notification, if there is no fullscreen window active. If the notification is already drawn, it won't get undrawn.
 - pushback :: same as delay, but when switching into fullscreen, the notification will get withdrawn from screen again and will get delayed like a new notification
-#+BEGIN_SRC dunstrc
+#+BEGIN_SRC dunstrc :noweb tangle :tangle dunstrc
 #[fullscreen_delay_everything]
 #    fullscreen = delay
 #[fullscreen_show_critical]
@@ -532,4 +531,101 @@ NOTE: It might be helpful to run dunst -print in a terminal in order to find fit
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
+#+END_SRC
+
+* Nord Color Scheme
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord0][nord0]]
+#+NAME: nord0
+#+BEGIN_SRC text
+#2E3440
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord1][nord1]]
+#+NAME: nord1
+#+BEGIN_SRC text
+#3B4252
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord2][nord2]]
+#+NAME: nord2
+#+BEGIN_SRC text
+#434C5E
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord3][nord3]]
+#+NAME: nord3
+#+BEGIN_SRC text
+#4C566A
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord4][nord4]]
+#+NAME: nord4
+#+BEGIN_SRC text
+#D8DEE9
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord5][nord5]]
+#+NAME: nord5
+#+BEGIN_SRC text
+#E5E9F0
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord6][nord6]]
+#+NAME: nord6
+#+BEGIN_SRC text
+#ECEFF4
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord7][nord7]]
+#+NAME: nord7
+#+BEGIN_SRC text
+#8FBCBB
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord8][nord8]]
+#+NAME: nord8
+#+BEGIN_SRC text
+#88C0D0
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord9][nord9]]
+#+NAME: nord9
+#+BEGIN_SRC text
+#81A1C1
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord10][nord10]]
+#+NAME: nord10
+#+BEGIN_SRC text
+#5E81AC
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord11][nord11]]
+#+NAME: nord11
+#+BEGIN_SRC text
+#BF616A
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord12][nord12]]
+#+NAME: nord12
+#+BEGIN_SRC text
+#D08770
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord13][nord13]]
+#+NAME: nord13
+#+BEGIN_SRC text
+#EBCB8B
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord14][nord14]]
+#+NAME: nord14
+#+BEGIN_SRC text
+#A3BE8C
+#+END_SRC
+
+**** [[https://www.nordtheme.com/docs/colors-and-palettes#nord15][nord15]]
+#+NAME: nord15
+#+BEGIN_SRC text
+#B48EAD
 #+END_SRC
