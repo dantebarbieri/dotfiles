@@ -1,0 +1,55 @@
+{
+	"analytics-uuid": "c4826a73-7e37-4857-bc8c-a496a990323c",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1597423180538
+	},
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "114193334285742714334",
+		"email": "dantevbarbieri@gmail.com",
+		"email_verified": true,
+		"at_hash": "Xd3jNhoEauCc-g87K3zbQA",
+		"iat": 1597423198,
+		"exp": 1597426798
+	},
+	"tokens": {
+		"expires_at": 1597426812393,
+		"refresh_token": "1//0fK_k_BxPlDcqCgYIARAAGA8SNwF-L9IrW3dN0peNKN9k5NORA7RR4SxRxyAu7l9l0Fkj2kgYjlt7JX94sJDvE1g1vAqfbz0ZoDo",
+		"scopes": [
+			"email",
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+			"https://www.googleapis.com/auth/firebase",
+			"openid"
+		],
+		"access_token": "ya29.a0AfH6SMDQaPWjnFsWguWnYNbj9vmpUp3EZ5DRLQMxtSkTtKR6ZgcT7gdN-oWWAYLIAZFpZ856mSiOdbP3VSXZAfptJTh14XorWe1z9LYVSJDcmFZ9aEnEwp2_H9EaKvYbMPoBxWjguV-rZ0i19WmEd1tOhFUfDPfA7jMF-XLAOcE",
+		"expires_in": 3599,
+		"scope": "openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0NGY2MGU5ZmI1MTVhMmEwMWMxMWViZWIyMjg3MTI4NjA1NDA3MTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE0MTkzMzM0Mjg1NzQyNzE0MzM0IiwiZW1haWwiOiJkYW50ZXZiYXJiaWVyaUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkRvbG82aXlfSmFrN1lvMGNnb28zMWciLCJpYXQiOjE1OTc0MjMyMTUsImV4cCI6MTU5NzQyNjgxNX0.VyjM5J5v7rxPAyp24c8Koipg3gJnMlzict0mz2aq5H6tVnrZ0Ydn_GR1oDQjr10knjMImNNS4yDrW9hQjxQHFFQ1TBAfjWfnk0U7-jMkVXCBskVxJmjlwk34P8xpJfjeArhKaZgvsTNm-g4vhKkECKtx196Qm0fMsjQaVCaOwlIOHlJuwhfYybRxwZOw8IwODaJdPRi569Hsuh3NGfZWMl-rZ_KP1hEZXFOWFFnK-qipXM5JPjiSW-fWcOZOSqIgwYGJ5UcydECYvGKqNtdoBLuOjGUE8nXZJNf5a8tCMyf7ibvAn_oPbBP2dcO7ub2mdi-0AWkI2D8SFjZuIcP4eA"
+	},
+	"activeProjects": {
+		"/home/danteb/Documents/csce-pt-database-tamu": "csce-pt-database-tamu"
+	},
+	"webconfig": {
+		"csce-pt-database-tamu": {
+			"projectId": "csce-pt-database-tamu",
+			"databaseURL": "https://csce-pt-database-tamu.firebaseio.com",
+			"storageBucket": "csce-pt-database-tamu.appspot.com",
+			"locationId": "us-central",
+			"apiKey": "AIzaSyBt_0cpc7FLgngqLr5oGwVIljAGS22yRBQ",
+			"authDomain": "csce-pt-database-tamu.firebaseapp.com",
+			"messagingSenderId": "941092727408"
+		}
+	}
+}
