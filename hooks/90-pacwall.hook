@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Regenerating the wallpaper...
+When = PostTransaction
+Exec = /bin/pacwall -b "#2E3440" -s "#ECEFF422" -d "#BF616Aaa" -e "#5E81ACaa" -p "#EBCB8Baa" -f "#B48EADaa" -u "#D08770aa" -y "#ECEFF4aa" -o /tmp/pacwall.png
