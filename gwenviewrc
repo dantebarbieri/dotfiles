@@ -2,18 +2,20 @@
 update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
 
 [MainWindow]
-Height 1440=1344
-State=AAAA/wAAAAD9AAAAAAAACegAAAUFAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+Height 1440=1296
+State=AAAA/wAAAAD9AAAAAAAABJYAAATVAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 2560=2536
+Width 2560=1174
 
 [Recent Files]
 File1[$e]=$HOME/zoom.png
 File2[$e]=$HOME/Downloads/Untitled drawing.png
 File3[$e]=$HOME/Documents/csce-pt-database-tamu/src/images/schedule.png
+File4[$e]=$HOME/screen.png
 Name1[$e]=zoom.png
 Name2[$e]=Untitled drawing.png
 Name3[$e]=schedule.png
+Name4[$e]=screen.png
 
 [SideBar]
-SideBarSplitterSizes=200,2330
+SideBarSplitterSizes=200,968
