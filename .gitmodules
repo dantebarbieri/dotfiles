@@ -1,3 +1,9 @@
-[submodule "polybar/themes"]
+[submodule "polybar-themes"]
 	path = polybar-themes
 	url = https://github.com/adi1089x/polybar-themes.git
+[submodule "AstroNvim"]
+	path = nvim
+	url = https://github.com/AstroNvim/AstroNvim
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/AstroNvim/AstroNvim
