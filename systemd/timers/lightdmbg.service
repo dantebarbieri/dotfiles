@@ -1,6 +1,0 @@
-[Unit]
-Description=background from unsplash
-
-[Service]
-Type=oneshot
-ExecStart=cp /tmp/wallpaper.jpg /usr/share/backgrounds/wallpaper.jpg

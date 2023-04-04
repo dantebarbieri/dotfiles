@@ -1,1 +1,0 @@
-fish_ssh_agent
